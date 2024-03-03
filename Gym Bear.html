@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Bear Ltda.</title>
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1565c0;
+            color: #ffd700;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        nav {
+            text-align: left;
+            margin-top: 10px;
+            opacity: 0;
+            animation: slideIn 1.5s ease-out forwards;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1565c0;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #ffd700;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a:hover {
+            background-color: #1565c0;
+            color: #ffd700;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        section {
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            color: #000000;
+        }
+
+        .contact-info {
+            text-align: right;
+        }
+
+        .image-carousel {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .carousel {
+            max-width: 48%;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1565c0;
+            color: #ffd700;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h1 {
+            background: none;
+            border: 2px solid #1565c0;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        section#inicio h2 {
+            font-size: 28px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap">
+</head>
+<body>
+    <header>
+        <h1>Gym Bear Ltda.</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('inicio')">Inicio</a>
+        <a href="#" onclick="showSection('servicios')">Nuestros Servicios</a>
+        <a href="#" onclick="showSection('nutricion')">Nutrición y Acondicionamiento Físico</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Expertos en acondicionamiento físico y nutrición<br>Para alcanzar la gloria, empieza por ti mismo; comienza con ayuda en entrenamiento y nutrición.</h2>
+            
+            <div class="contact-info">
+                <p>Número de teléfono: 311884618</p>
+                <p>Correo electrónico: gymbear@gmail.com</p>
+                <p>Instagram: <a href="https://www.instagram.com/GymBear" target="_blank">@GymBear</a></p>
+                <p>TikTok: <a href="https://www.tiktok.com/@GymBear" target="_blank">@GymBear</a></p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="carousel-img" src="https://i.redd.it/8t2y8eov1oo71.jpg" alt="Gym Bear Carrusel 1">
+                </div>
+
+                <div class="carousel">
+                    <img class="carousel-img" src="https://i.pinimg.com/736x/a5/b2/8e/a5b28eec5bd32b8d7b4b5a8a17d6f7b5.jpg" alt="Gym Bear Carrusel 2">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" style="display:none;">
+            <h2>Nuestros Servicios</h2>
+            <p>Descubre la variedad de servicios que ofrecemos, desde entrenamientos personalizados hasta clases grupales divertidas. ¡Únete a la familia Gym Bear!</p>
+        </section>
+
+        <section id="nutricion" style="display:none;">
+            <h2>Nutrición y Acondicionamiento Físico</h2>
+            <p>
+                La nutrición y el acondicionamiento físico son fundamentales para alcanzar tus metas de salud y bienestar. Aquí hay algunos aspectos clave:
+            </p>
+            <ul>
+                <li>
+                    <strong>Dieta Equilibrada:</strong> Mantén una dieta equilibrada que incluya una variedad de alimentos, como frutas, verduras, proteínas magras y granos enteros.
+                </li>
+                <li>
+                    <strong>Control de Porciones:</strong> Aprende a controlar las porciones para evitar el exceso de calorías y mantener un peso saludable.
+                </li>
+                <li>
+                    <strong>Hidratación:</strong> Bebe suficiente agua a lo largo del día para mantener tu cuerpo bien hidratado, especialmente durante el ejercicio.
+                </li>
+                <li>
+                    <strong>Ejercicio Regular:</strong> Incorpora actividades físicas regularmente, como entrenamiento de fuerza y cardio, para mejorar tu salud cardiovascular y fortalecer tus músculos.
+                </li>
+                <li>
+                    <strong>Descanso:</strong> Duerme lo suficiente para permitir que tu cuerpo se recupere y regenere. El descanso es crucial para un rendimiento óptimo.
+                </li>
+            </ul>
+            <p>
+                Además, te proporcionamos gráficos y herramientas de seguimiento personalizado para evaluar tu progreso. Consulta con nuestros expertos en nutrición y entrenadores para obtener orientación específica.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gym Bear Ltda. - Transformando vidas a través del fitness</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('inicio');
+        });
+
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            var targetSection = document.getElementById(sectionId);
+            targetSection.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+    <!-- Resto del código ... -->
+</body>
+</html>
+
